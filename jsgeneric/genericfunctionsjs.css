@@ -1,0 +1,102 @@
+/* css style sheet*/
+
+.formstyles {
+	position: absolute;
+	top: -15vh;
+	background: #fff;
+	padding: 30px;
+	left: 27%;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 0px rgb(92, 6, 6);
+	width: 600px;
+}
+
+@media only screen and (max-width:678px) {
+	.image {
+		background-size: 300%;
+	}
+}
+
+hr.formborder {
+	border: 5px solid rgb(151, 29, 20);
+	margin-top: -30px;
+	width: 590px;
+	margin-right: 20px;
+	margin-left: -30px;
+}
+
+.form-control {
+	border-radius: 0px;
+	border: 0px;
+	border-bottom: 2px solid;
+	color: rgb(206, 200, 200);
+	width: 50%;
+}
+
+.paragraph-styles {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 4px;
+	margin-bottom: 3px;
+}
+
+.labelfont {
+	font-size: 15px;
+	font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+input[type=text]:focus {
+	border-bottom-color: rgb(82, 23, 23);
+}
+
+input[type=tel]:focus {
+	border-bottom-color: rgb(82, 23, 23);
+}
+
+input[type="checkbox"] {
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	/*padding: 10px;*/
+}
+
+input[type=checkbox]+label:before {
+	border: 0.1em solid gray;
+	border-radius: 0.2em;
+}
+
+.image {
+	width: 100%;
+	height: 290px;
+}
+
+.input-field {
+	margin-bottom: 35px;
+}
+
+input[type="radio"] {
+	width: 20px;
+	height: 20px;
+	color: gray;
+}
+
+
+/*footer */
+
+.footer {
+	margin-top: 1700px;
+}
+
+.font-google {
+	font-size: 22.1px;
+	opacity: 0.6;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.error-size {
+	font-size: 14px;
+}
+
+.btn {
+	background-color: rgba(102, 14, 14, 0.76);
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" sizes="16x16" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
+    <title>Event registration</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="genericfunctionsjs.css">
+    <script src="jsgeneric.js"></script>
+</head>
+
+<body>
+
+    <!-- image container start-->
+
+    <div class="container-fluid">
+        <img src="img/event.jpg" alt="" class="image">
+    </div>
+
+    <!-- form container-->
+    <div class="container-fluid ">
+        <div class="row justify-content-center">
+            <div class="col">
+                <form action="#" class="formstyles mb-5" id="form" name="myform" novalidate onSubmit="return validation(this)"/>
+                    <hr class="formborder">
+
+                    <h2 class="display-6 mt-5 ">Event registration</h2>
+                    <div class="par-styles">
+                        Event Timing:january 4th -6th,2016
+                        <br> Event Address:123 your street your city, ST 12345
+                        <br> contact us at(123) 456-877890 or
+                        <a href="#" style="text-decoration: underline;"> no-reply@example.com</a>
+
+                    </div>
+
+                    <p class="text-danger paragraph-styles mb-4">* Required</p>
+
+                    <!---First Name-->
+
+                    <div class="input-field">
+                        <label class="labelfont">Firstname: <span class="text-danger">*</span></label>
+                        <input type="text" name="fname" id="firstName" class="form-control" placeholder="Your answer" />
+                        <span id="firsterror" class="text-danger error-size"></span>
+                    </div>
+
+                    <!--Last Name-->
+
+                    <div class="input-field">
+                        <label class="labelfont">Lastname: <span class="text-danger">*</span></label>
+                        <input type="text" name="lname" id="lastName" class="form-control" placeholder="Your answer" />
+                        <span id="lasterror" class="text-danger error-size"></span>
+                    </div>
+
+                    <!--organisation-->
+
+                    <div class="input-field">
+                        <label class="labelfont">Organisation <span class=t ext-danger>*</span></label>
+                        <input type="text" name="org" id="organ" class="form-control" placeholder="Your answer">
+                        <span id="organerror" class="text-danger error-size"></span>
+                    </div>
+
+                    <!--email-->
+
+                    <div class="input-field">
+                        <label class="labelfont">Email <span class="text-danger"> *</span></label>
+                        <input type="email" name="Email" id="email" class="form-control" placeholder="Your answer">
+                        <span id="emailerror" class="text-danger error-size"></span>
+                    </div>
+
+                    <!---mobile number-->
+
+                    <div class="input-field">
+                        <label class="labelfont">Mobile Number: <span class="text-danger"> *</span></label>
+                        <input type="tel" name="mobileno" class="form-control" placeholder="your answer" />
+                        <span id="mobileerror" class="text-danger error-size"></span>
+                    </div>
+
+                    <!--checkboxes-->
+
+                    <div class="input-field">
+                        <label for="" class="labelfont"> What days will you attend ? <span class="text-danger">*</span></label>
+                        <br>
+                        <input type="checkbox" id="myCheckbox" name="day" value="day1"> <span class="day"> Day 1</span></input>
+                        <br>
+                        <input type="checkbox" id="myCheckbox" name="day" value="day2"> <span class="day"> Day 2</span></input>
+                        <br>
+                        <input type="checkbox" id="myCheckbox" name="day" value="day3"> <span class="day"> Day 3</span></input>
+                        <br>
+                        <div>
+                            <p id="checkError" class="text-danger error-size"></p>
+                        </div>
+                    </div>
+
+                    <!-- City-->
+
+                    <div class="input-field">
+
+                        <span class="labelfont">Select the city: <span class = "text-danger">* </span></span>
+                        <select id="City" name="select">
+                            <option value="0">Select</option>
+                            <option value="1">kakinada</option>
+                            <option value="2">mumbai</option>
+                            <option value="3">chennai</option>
+                            <option value="4">Hyderabad</option>
+                            <option value="5">bangalore</option>
+                            <option value="5">kolkata</option>
+
+                        </select>
+                        <div>
+                            <span id="cityerror" class="text-danger error-size"></span>
+                        </div>
+                    </div>
+
+                    <!--radio buttons-->
+
+                    <div class="input-field">
+                        <label class="labelfont"> Dietary restrictions <span class="text-danger">*</span></label>
+                        <br>
+                        <input type="radio" name="radios" id="myRadios" value="none"> <span class="day"> None</span></input>
+                        <br>
+                        <input type="radio" name="radios" id="myRadios" value="vegetarian"> <span class="day"> vegetarian</span></input>
+                        <br>
+                        <input type="radio" name="radios" id="myRadios" value="vegen"> <span class="day"> Vegen</span></input>
+                        <br>
+                        <input type="radio" name="radios" id="myRadios" value="kosher"> <span class="day"> Kosher</span></input>
+                        <br>
+                        <input type="radio" name="radios" id="myRadios" value="gluten-free"> <span class="day">Gluten-free</span></input>
+                        <br>
+                        <input type="radio" name="radios" id="myRadios" value="other"> <span class="day"> Other:</span></input>
+                        <br>
+                        <div>
+                            <p id="radError" class="text-danger error-size"></p>
+                        </div>
+
+                    </div>
+
+                    <!--single checkbox-->
+
+                    <div class="input-field mb-5">
+                        <p class="labelfont">I understand that I will have to pay $$ upon arrival <span class="text-danger">*</span></p>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" name="check" id="singlecheck" value="check">
+                            <label class="form-check-label ml-2"> Yes</label>
+                            <div>
+                                <span id="singlecheckerror" class="text-danger error-size"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" id="submit" value="submit" class="btn text-white mb-3" autocomplete="off">
+
+                </form>
+
+                <!--footer-->
+
+                <div class="input-field footer">
+                    <p class="text-muted text-sm text-center"><small>Never submit passwords through Google Forms</small></p>
+                    <p class="text-muted  text-sm text-center"><small>This content is neither created nor endorsed by Google.
+                            <a href="#" style="text-decoration: underline;" class = "text-muted">Abuse </a>
+
+                            <a href="#" style="text-decoration: underline ;" class = "text-muted">Terms of Service</a>
+
+                                <a href="#" style="text-decoration: underline;" class = "text-muted"> Privacy Policy</a>
+                            </small>
+                    </p>
+                    <p class="text-muted text-center font-weight-bold  font-google"> Google Forms</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div </body>
+
+</html>
